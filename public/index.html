@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlavourFusion | AI Culinary Assistant</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-image"></div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>FlavourFusion</h1>
+      <p class="tagline">Where Taste Meets Intelligence 🤖🍽️</p>
+    </div>
+  </header>
+
+  <main class="main-container">
+    
+    <section class="content-column">
+      
+      <div id="special" class="card special-card">
+        <div class="card-image-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYAAUhHeqHanULWOQTYCCs0vNQc2fOGMYiwg&s" alt="Today's Special Dish" class="dish-image">
+        </div>
+        <div class="card-content">
+          <h2>⭐ Today's Special</h2>
+          <div id="specialText">
+            <h3>Pan-Seared Saffron Crusted Scallops with Tropical Sunset Glaze</h3>
+            <p>This vibrant dish combines succulent scallops with a hint of saffron, a delicate crust of sesame seeds and panko breadcrumbs, cooked to perfection and served with a tangy tropical sunset glaze made from a mix of pineapple, orange, and mango puree, served on a bed of spicy coconut quinoa and microgreens.</p>
+            <p class="price"><strong>Price:</strong> $35</p>
+            <p class="recommendation"><strong>Recommendation:</strong> Paired with a glass of Sauvignon Blanc to enhance the tropical notes.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="chatbot-column">
+      <div id="chatbot" class="card">
+        <div id="chatHeader">
+          <span class="bot-icon">🤖</span>
+          <div>
+            <h3>FlavourBot</h3>
+            <p class="status">Online & Ready to Help</p>
+          </div>
+        </div>
+        
+        <div id="chatBody">
+          <div class="message bot">
+            <div class="message-content">
+              Hi there! 👋 I'm FlavourBot. Ask me about our menu, ingredients, or get a personalized recommendation!
+            </div>
+          </div>
+          <div class="message user">
+            <div class="message-content">
+              what is todays spl
+            </div>
+          </div>
+           <div class="message bot">
+            <div class="message-content">
+              Good day!<br><br>Today's special at FlavourFusion restaurant is the Pan-Seared Scallops with Tropical Sunset Glaze...
+            </div>
+          </div>
+        </div>
+        
+        <div id="chatFooter">
+          <input id="chatInput" type="text" placeholder="Type your question here..." autocomplete="off" />
+          <button id="sendBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
